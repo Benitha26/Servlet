@@ -1,0 +1,14 @@
+@CHARSET "ISO-8859-1";
+table,th,td
+{
+	border:2px solid green;
+}
+.test{
+	position:absolute;
+	left:30%;
+}
+body{
+	background-image:url("../images/image1.jpg");
+	background-repeat: no-repeat;
+	background-color: #cccccc;
+}
