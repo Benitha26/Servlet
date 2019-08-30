@@ -45,6 +45,7 @@ public class LoginServlet extends HttpServlet {
 		String encodedString=encoder.encodeToString(normalString.getBytes(StandardCharsets.UTF_8));
 		
 		if(LoginDao.validate(email,password)){
+		HttpSession session=request.getSession(true);
 			RequestDispatcher rd=request.getRequestDispatcher("viewCustomers.jsp");
 			rd.forward(request, response);
 			pw.print("Login Successful");
